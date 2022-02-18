@@ -2,7 +2,6 @@ library(shiny)
 
 shinyServer(function(input, output) {
   
-  
   # On va ici créer la grille à l'aide de l'algorithme
   # donné dans le sujet
   
