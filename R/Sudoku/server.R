@@ -7,7 +7,7 @@ shinyServer(function(input, output) {
   
   nomco <- c('C1','C2','C3','C4','C5','C6','C7','C8','C9')
   nomli <- c('L1','L2','L3','L4','L5','L6','L7','L8','L9')
-  matrix  <- matrix(11:19, ncol=9, nrow=9, byrow=FALSE, dimnames = list(nomli,nomco))
+  matrix  <- matrix(NA, ncol=9, nrow=9, byrow=FALSE, dimnames = list(nomli,nomco))
   
   # On remplit la première ligne
   ens <- c(1:9)
