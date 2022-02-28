@@ -3,8 +3,10 @@ library(shiny)
 shinyUI(fluidPage(
   
   headerPanel("Sudoku"),
-  
+  sliderInput("Diff", label = "Difficulté", 1,3, 1 ),
   mainPanel(
-    uiOutput('matrix')
+    plotOutput(outputId = 'affgrille'),
   )
 ))
+
+
