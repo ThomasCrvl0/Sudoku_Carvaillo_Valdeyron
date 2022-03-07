@@ -1,7 +1,6 @@
 #' Affichage de la grille de sudoku
 #'
 #' @return une grille complète sous forme de matrice
-#'
 
 grille <- function() {
   
