@@ -1,4 +1,4 @@
-#' Affichage de la grille de sudoku
+#' Génération de la grille de sudoku complète
 #'
 #' @return une grille complète sous forme de matrice
 
@@ -42,28 +42,4 @@ grille <- function() {
 
   return(A)
 }
-
-############### TEST ###############
-
-
-A = grille ()
-
-for (t in c(1:60) ) {
- A = suppressioncase (A) 
-}
-
-L = rang(A)
-n = length(L)
-
-Lx = L[ 1:(n/2) ]
-Ly = L[ (n/2 +1):n ]
-
-
-backtraking(A, 20000)
-
-
-grilleincomplete(1)
-
-
-####################################
 

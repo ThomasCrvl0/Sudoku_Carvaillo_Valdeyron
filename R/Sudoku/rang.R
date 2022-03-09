@@ -1,3 +1,7 @@
+#'  Détermine la position des cases incomplètes dans l'algorithme de Backtracking.
+#'
+#' @return Une liste de position.
+
 rang = function(A) {
   
   B = matrix(1000, ncol=9, nrow=9)  # Matrice des "rangs"   # 1000 = NA (pour la comparaison ci-dessous).
@@ -48,13 +52,13 @@ rang = function(A) {
       }
     }
     
-    if ( B[i,j] == 1000 ) {  # On a classé toute les cases entre-elles, donc on a finit.
+    if ( B[i,j] == 1000 ) {  # On a classé toute les cases entre-elles, donc on a fini.
       t = 1
     }
     
     if ( B[i,j] != 1000 ) {
       
-      Lx = append( Lx, i )   # On insére les coordonées de la case (i,j) dans la liste des rangs.
+      Lx = append( Lx, i )   # On insère les coordonnées de la case (i,j) dans la liste des rangs.
       Ly = append( Ly, j )
       B[i,j] = 1000          # Puis on remplace sa valeur dans B pour qu'elle ne soit plus sélectionnée à l'avenir.
       

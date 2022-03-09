@@ -1,3 +1,8 @@
+#' 
+#' Vérifie si k peut être insérer dans le bloc correspondant à la case (i,j)
+#' @return un booléen
+
+
 existesurbloc = function(i,j, k, A) {
   
   # On identifie le bloc auquel appartient (i,j), ce sera le bloc (a,b).

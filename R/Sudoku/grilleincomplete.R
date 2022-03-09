@@ -1,3 +1,6 @@
+#' Génère le sudoku incomplet à remplir.
+#'
+#' @return une liste contenant le sudoku à remplir, la solution, et le nombre de tours dans l'algorithme de backtracking.
 
 grilleincomplete = function(m) {   # m = niveau de difficulté = 1,2,3.
   

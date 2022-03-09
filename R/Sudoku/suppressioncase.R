@@ -1,3 +1,7 @@
+#'  Supprime une case aléatoire du sudoku A.
+#'
+#' @return Le sudoku A avec une case en moins.
+
 suppressioncase <- function(A) {
   
   t = 0

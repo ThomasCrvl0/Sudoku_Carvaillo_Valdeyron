@@ -1,3 +1,8 @@
+#' matrice de sudoku incomplète, nombre de tour maximal
+#' 
+#' Algorithme de Backtracking
+#' 
+#' @return solution sudoku et nombre de tours dans l'algorithme
 
 backtraking = function(A, x) {  # x = nombre de tours maximal
   
@@ -50,4 +55,3 @@ backtraking = function(A, x) {  # x = nombre de tours maximal
   return( list(Acopy, cmp) )   # Acopy est une solution possible au Sudoku.
   
 }
-
